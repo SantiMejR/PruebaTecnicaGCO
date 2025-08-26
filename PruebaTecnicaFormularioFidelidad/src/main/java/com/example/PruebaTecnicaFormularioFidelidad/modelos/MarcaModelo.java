@@ -11,7 +11,6 @@ public class MarcaModelo {
         this.marca = marca;
     }
 
-    // Getters y setters
     public Long getIdMarca() {
         return idMarca;
     }

@@ -12,10 +12,12 @@ public class TipoIdentificacionModelo {
     }
 
     public Integer getId() {
+
         return id;
     }
 
     public void setId(Integer id) {
+
         this.id = id;
     }
 
@@ -24,6 +26,7 @@ public class TipoIdentificacionModelo {
     }
 
     public void setNombre(String nombre) {
+
         this.nombre = nombre;
     }
 

@@ -19,14 +19,17 @@ public class Pais {
     }
 
     public void setCodPais(Long codPais) {
+
         this.codPais = codPais;
     }
 
     public String getPais() {
+
         return pais;
     }
 
     public void setPais(String pais) {
+
         this.pais = pais;
     }
 

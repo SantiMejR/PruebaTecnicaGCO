@@ -27,18 +27,22 @@ public class Departamento {
     }
 
     public String getDepartamento() {
+
         return departamento;
     }
 
     public void setDepartamento(String departamento) {
+
         this.departamento = departamento;
     }
 
     public Pais getPais() {
+
         return pais;
     }
 
     public void setPais(Pais pais) {
+
         this.pais = pais;
     }
 

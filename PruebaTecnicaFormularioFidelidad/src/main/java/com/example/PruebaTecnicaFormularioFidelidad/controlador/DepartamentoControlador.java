@@ -46,7 +46,7 @@ public class DepartamentoControlador {
         return ResponseEntity.ok(nuevo);
     }
 
-    @GetMapping
+    @GetMapping("/listar")
     public ResponseEntity<List<DepartamentoModelo>> listar() {
         List<DepartamentoModelo> departamentos = departamentoRepositorio.findAll().stream()
                 .map(dep -> new DepartamentoModelo(Math.toIntExact(dep.getCodDepartamento()), dep.getDepartamento()))

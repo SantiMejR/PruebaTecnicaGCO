@@ -45,7 +45,7 @@ public class CiudadControlador {
         return ResponseEntity.ok(nueva);
     }
 
-    @GetMapping
+    @GetMapping("/listar")
     public ResponseEntity<List<CiudadModelo>> listar() {
         List<CiudadModelo> ciudades = ciudadRepositorio.findAll().stream()
                 .map(c -> new CiudadModelo(Math.toIntExact(c.getCodCiudad()), c.getCiudad()))

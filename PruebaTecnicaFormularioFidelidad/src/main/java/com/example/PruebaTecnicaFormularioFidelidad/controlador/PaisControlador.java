@@ -33,7 +33,7 @@ public class PaisControlador {
         return ResponseEntity.ok(nuevo);
     }
 
-    @GetMapping
+    @GetMapping("/listar")
     public ResponseEntity<List<PaisModelo>> listar() {
         List<PaisModelo> paises = paisRepositorio.findAll().stream()
                 .map(p -> new PaisModelo(Math.toIntExact(p.getCodPais()), p.getPais()))

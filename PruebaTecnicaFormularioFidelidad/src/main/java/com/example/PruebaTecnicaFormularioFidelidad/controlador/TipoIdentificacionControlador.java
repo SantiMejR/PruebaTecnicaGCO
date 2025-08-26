@@ -33,7 +33,7 @@ public class TipoIdentificacionControlador {
         return ResponseEntity.ok(nuevo);
     }
 
-    @GetMapping
+    @GetMapping("/listar")
     public ResponseEntity<List<TipoIdentificacionModelo>> listar() {
         List<TipoIdentificacionModelo> tipos = tipoIdentificacionRepositorio.findAll().stream()
                 .map(t -> new TipoIdentificacionModelo(Math.toIntExact(t.getCodIdentificacion()), t.getTipo()))
