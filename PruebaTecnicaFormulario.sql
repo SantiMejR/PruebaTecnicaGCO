@@ -130,10 +130,6 @@ INNER JOIN Pais p ON d.Cod_Pais = p.Cod_Pais;
 
 
 
-SELECT COLUMN_NAME
-FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_NAME = 'Clientes_PorMarca';
-
 
 
 
